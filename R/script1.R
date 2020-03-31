@@ -8,7 +8,6 @@ pkg_inst <- function(refs, snapshot, destdir)
     snapshot <- file.path("https://mran.microsoft.com/snapshot", snapshot)
     pkgdepends::new_pkg_installation_proposal(
         refs,
-        config=list(`cran-mirror`=snapshot,
-        library=destdir)
+        config=list(`cran-mirror`=snapshot, library=destdir)
     )
 }
