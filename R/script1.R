@@ -3,11 +3,9 @@
 #' @param snapshot MRAN snapshot date.
 #' @param destdir Directory where packages are to be installed.
 #' @export
-pkg_inst <- function(refs, snapshot, destdir)
+pkg_inst <- function(refs, snapshot, destdir, config=list())
 {
     snapshot <- file.path("https://mran.microsoft.com/snapshot", snapshot)
-    pkgdepends::new_pkg_installation_proposal(
-        refs,
-        config=list(`cran-mirror`=snapshot, library=destdir)
-    )
+    config <- utils::modifyList(config, list(`cran-mirror`=snapshot, library=destdir))
+    pkgdepends::new_pkg_installation_proposal(refs, config=config)
 }
