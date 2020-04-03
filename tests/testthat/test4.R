@@ -10,7 +10,7 @@ test_that("Mac install with old snapshot",
 
     pkgcache::pkg_cache_delete_files()
 
-    refs <- "rlang"
+    refs <- "cran::rlang"
     libdir <- tempfile()
 
     withr::with_options(list(repos=NULL),
