@@ -8,6 +8,6 @@ License: GPL-2
 Encoding: UTF-8
 LazyData: true
 Imports: pkgdepends, utils
-Suggests: testthat, pkgcache, jsonlite
+Suggests: testthat, pkgcache, jsonlite, withr
 Remotes: r-lib/pkgdepends
 RoxygenNote: 7.0.2.9000
