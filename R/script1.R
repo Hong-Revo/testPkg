@@ -2,6 +2,7 @@
 #' @param refs Package references.
 #' @param snapshot MRAN snapshot date.
 #' @param destdir Directory where packages are to be installed.
+#' @param config Additional configuration options.
 #' @export
 pkg_inst <- function(refs, snapshot, destdir, config=list())
 {

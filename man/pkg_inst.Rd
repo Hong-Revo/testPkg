@@ -4,7 +4,7 @@
 \alias{pkg_inst}
 \title{Calls pkgdepends::new_pkg_installation_proposal}
 \usage{
-pkg_inst(refs, snapshot, destdir)
+pkg_inst(refs, snapshot, destdir, config = list())
 }
 \arguments{
 \item{refs}{Package references.}
@@ -12,6 +12,8 @@ pkg_inst(refs, snapshot, destdir)
 \item{snapshot}{MRAN snapshot date.}
 
 \item{destdir}{Directory where packages are to be installed.}
+
+\item{config}{Additional configuration options.}
 }
 \description{
 Calls pkgdepends::new_pkg_installation_proposal
